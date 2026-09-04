@@ -1,0 +1,1708 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "DR TODAY API Documentation",
+        "description": "API documentation for DR TODAY application",
+        "contact": {
+            "email": "admin@dr-today.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8080",
+            "description": "DR TODAY API Server"
+        }
+    ],
+    "paths": {
+        "/api/register": {
+            "post": {
+                "tags": [
+                    "Register"
+                ],
+                "summary": "Create a new Register",
+                "operationId": "8a56853624e025573120a09a4c75d468",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/login": {
+            "post": {
+                "tags": [
+                    "Login"
+                ],
+                "summary": "Create a new Login",
+                "operationId": "a3b306d14572d1f4bd6c064b3233e7b8",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/forgot_password": {
+            "post": {
+                "tags": [
+                    "Forgot_password"
+                ],
+                "summary": "Create a new Forgot_password",
+                "operationId": "6dd36ab30ee7f00dc3180533d3f6fc6e",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/me": {
+            "get": {
+                "tags": [
+                    "Me"
+                ],
+                "summary": "Get all Me",
+                "operationId": "9d9bc556f927575aa492a88c28fe5908",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/clinics": {
+            "get": {
+                "tags": [
+                    "Clinic"
+                ],
+                "summary": "Get all Clinics",
+                "operationId": "b54b0f17be975485949c0b81402d6b87",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Clinic"
+                ],
+                "summary": "Create a new Clinics",
+                "operationId": "6e763b2ebdd6057272787c8e2b85b556",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/clinics/{clinic}": {
+            "get": {
+                "tags": [
+                    "Clinic"
+                ],
+                "summary": "Get all {clinic}",
+                "operationId": "902ca9a85542453b9fcfcf0574d2bd76",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Clinic"
+                ],
+                "summary": "Update a {clinic} by ID",
+                "operationId": "c1f2ba3feeafe15ea7d25e7f73a33ddf",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Clinic"
+                ],
+                "summary": "Delete a {clinic} by ID",
+                "operationId": "529f8e815513f01b18a558e4ba1486bf",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/companies": {
+            "get": {
+                "tags": [
+                    "Company"
+                ],
+                "summary": "Get all Companies",
+                "operationId": "ac82cf1c054ef7cbe0c010c867c5b527",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Company"
+                ],
+                "summary": "Create a new Companies",
+                "operationId": "cb75885c6c65fc26c387eaed207996c5",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/companies/{company}": {
+            "get": {
+                "tags": [
+                    "Company"
+                ],
+                "summary": "Get all {company}",
+                "operationId": "747b19097c1b918066cbdd7ff4e1e77e",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Company"
+                ],
+                "summary": "Update a {company} by ID",
+                "operationId": "d41e335de1a0343da7845bd470f80c5e",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/get_company/{id}": {
+            "get": {
+                "tags": [
+                    "Get_company"
+                ],
+                "summary": "Get a Get_company by ID",
+                "operationId": "9c50388e9a2cc058252b848e867ab408",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/companies/delete/{id}": {
+            "post": {
+                "tags": [
+                    "Company"
+                ],
+                "summary": "Create a new Delete",
+                "operationId": "d414529ae0b1924bab1cf25a5ab7254d",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/companies/restore/{id}": {
+            "post": {
+                "tags": [
+                    "Company"
+                ],
+                "summary": "Create a new Restore",
+                "operationId": "bea8451d2685b8e504e9b306618436d5",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/driver_documents": {
+            "get": {
+                "tags": [
+                    "Driver_document"
+                ],
+                "summary": "Get all Driver_documents",
+                "operationId": "e14be14e8190c8a66b037ee73c7f1d70",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Driver_document"
+                ],
+                "summary": "Create a new Driver_documents",
+                "operationId": "7f84bd975cb8faa2fd2416c7146ce473",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/driver_documents/{driver_document}": {
+            "get": {
+                "tags": [
+                    "Driver_document"
+                ],
+                "summary": "Get all {driver_document}",
+                "operationId": "ebba6056194eec7a76c26a467b650b2e",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Driver_document"
+                ],
+                "summary": "Update a {driver_document} by ID",
+                "operationId": "80362bfa9c47d9636128df8bd39104fa",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/driver_documents/delete/{id}": {
+            "post": {
+                "tags": [
+                    "Driver_document"
+                ],
+                "summary": "Create a new Delete",
+                "operationId": "d690d51ef66c9fe91cd5cee6d94093db",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/driver_documents/restore/{id}": {
+            "post": {
+                "tags": [
+                    "Driver_document"
+                ],
+                "summary": "Create a new Restore",
+                "operationId": "0ff1a7edae945382ec5799ec3eb0431e",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/masters": {
+            "get": {
+                "tags": [
+                    "Master"
+                ],
+                "summary": "Get all Masters",
+                "operationId": "9637769488bbb714bc89fc5b5297fbbb",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/modules": {
+            "get": {
+                "tags": [
+                    "Module"
+                ],
+                "summary": "Get all Modules",
+                "operationId": "8c46ed20c63a53c6aeb48930481d4936",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Module"
+                ],
+                "summary": "Create a new Modules",
+                "operationId": "185dfc283c8f8c35be1af66081b1c3f7",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/modules/{module}": {
+            "get": {
+                "tags": [
+                    "Module"
+                ],
+                "summary": "Get all {module}",
+                "operationId": "b5fa8aa6e7b5155ee0ded723c3ca3cb8",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Module"
+                ],
+                "summary": "Update a {module} by ID",
+                "operationId": "6301b7afbd7d67a8264e86e23fa4cc62",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/modules/delete/{id}": {
+            "post": {
+                "tags": [
+                    "Module"
+                ],
+                "summary": "Create a new Delete",
+                "operationId": "b552e1d5fbef004b181f3f7800697953",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/modules/restore/{id}": {
+            "post": {
+                "tags": [
+                    "Module"
+                ],
+                "summary": "Create a new Restore",
+                "operationId": "82a0847d8c9fc14e54354586ea4c2f5d",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/permissions": {
+            "get": {
+                "tags": [
+                    "Permission"
+                ],
+                "summary": "Get all Permissions",
+                "operationId": "83e09e395c82038fd34a94ef6870d5a1",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Permission"
+                ],
+                "summary": "Create a new Permissions",
+                "operationId": "ba9b4376b552746e3828235ff44e9787",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/permissions/{permission}": {
+            "get": {
+                "tags": [
+                    "Permission"
+                ],
+                "summary": "Get all {permission}",
+                "operationId": "c664f479c33d7e37c0ceea7a6cc60f67",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Permission"
+                ],
+                "summary": "Update a {permission} by ID",
+                "operationId": "e0c2b3a4b498d2138f974b031c246bc7",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/permissions/delete/{id}": {
+            "post": {
+                "tags": [
+                    "Permission"
+                ],
+                "summary": "Create a new Delete",
+                "operationId": "7d69d23b0fa8cc555298e919b378ed65",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/permissions/restore/{id}": {
+            "post": {
+                "tags": [
+                    "Permission"
+                ],
+                "summary": "Create a new Restore",
+                "operationId": "cbd16034d96d992d9010c85bf94eedcc",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/positions": {
+            "get": {
+                "tags": [
+                    "Position"
+                ],
+                "summary": "Get all Positions",
+                "operationId": "de993f59989edc99a12dd7346920d0c9",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Position"
+                ],
+                "summary": "Create a new Positions",
+                "operationId": "a1d18d07e18e39233144ad29f48c2030",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/positions/{position}": {
+            "get": {
+                "tags": [
+                    "Position"
+                ],
+                "summary": "Get all {position}",
+                "operationId": "17bfa71fb4d6a93637b50acb916f5cf6",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Position"
+                ],
+                "summary": "Update a {position} by ID",
+                "operationId": "2f24869d073c4ed8f8f77f3c40b092fe",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/positions/delete/{id}": {
+            "post": {
+                "tags": [
+                    "Position"
+                ],
+                "summary": "Create a new Delete",
+                "operationId": "1836a9de6c1e2e7047e9ce67794ec7fe",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/positions/restore/{id}": {
+            "post": {
+                "tags": [
+                    "Position"
+                ],
+                "summary": "Create a new Restore",
+                "operationId": "4d7c996dc9bfed5ec6deef667f05dff0",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/companies/upload_logo_path": {
+            "post": {
+                "tags": [
+                    "Company"
+                ],
+                "summary": "Create a new Upload_logo_path",
+                "operationId": "a3bb5d63288e09d4bce94a0f9df7ccc8",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/users/upload_image_path": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new Upload_image_path",
+                "operationId": "d18187ef4ec5ba19d29749a5bec7c50b",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/driver_documents/upload_doc_path": {
+            "post": {
+                "tags": [
+                    "Driver_document"
+                ],
+                "summary": "Create a new Upload_doc_path",
+                "operationId": "d1645e7eeb2ac2c0f26c9555a9d68253",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/user_timestamps": {
+            "get": {
+                "tags": [
+                    "User_timestamp"
+                ],
+                "summary": "Get all User_timestamps",
+                "operationId": "d441ec69f8804f15a0f114ff4760e5db",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "User_timestamp"
+                ],
+                "summary": "Create a new User_timestamps",
+                "operationId": "f0def7a209ae91acd808a4cf9799ac00",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/user_timestamps/{user_timestamp}": {
+            "get": {
+                "tags": [
+                    "User_timestamp"
+                ],
+                "summary": "Get all {user_timestamp}",
+                "operationId": "2c048cc31986f2a889603fea57f542cc",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "User_timestamp"
+                ],
+                "summary": "Update a {user_timestamp} by ID",
+                "operationId": "29d609e0fe92d76be41e28530c67ddc1",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/users": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get all Users",
+                "operationId": "eaedf6aa84fde38a08bf5d87308169f7",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new Users",
+                "operationId": "e2308aae8643f8f4d79821a6399114f3",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/users/{user}": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get all {user}",
+                "operationId": "dd08c53b3be10f887e141b15a012476e",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Update a {user} by ID",
+                "operationId": "382bd00663f083c07d96e2c51fde6577",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/users/delete/{id}": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new Delete",
+                "operationId": "d3c66ee8b689663b76a8683d445ea317",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/users/restore/{id}": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new Restore",
+                "operationId": "526aaaf51a7d905fc91a65145bfd1fd7",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/values/{value}/value_lists": {
+            "get": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Get all Value_lists",
+                "operationId": "0733d7c1813f8465e3d5e4af6bd3bb4c",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Create a new Value_lists",
+                "operationId": "0e272248f8b37fe50951fed44e287171",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/values/{value}/multiple_value_lists": {
+            "post": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Create a new Multiple_value_lists",
+                "operationId": "c9e646b6264c4e63cb49023596dc5cb8",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/values/{value}/value_lists/{value_list}": {
+            "get": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Get all {value_list}",
+                "operationId": "71f3158e0ae8ec29fef495121ab575a5",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Update a {value_list} by ID",
+                "operationId": "de08f995206e4c3981a693ecf99f1bb4",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/values/{value}/value_lists/delete/{id}": {
+            "post": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Create a new Delete",
+                "operationId": "0feb5c86815f34464029f5f1070078ac",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/values/{value}/value_lists/restore/{id}": {
+            "post": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Create a new Restore",
+                "operationId": "0fcb960e43feb8fa814034a4f618e6d0",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/values": {
+            "get": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Get all Values",
+                "operationId": "2052a69f5c7a922c7a6e8b8b875672e1",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Create a new Values",
+                "operationId": "db48a29391c5063012e30c603673595c",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/values/{value}": {
+            "get": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Get all {value}",
+                "operationId": "9d74d17963319753c15432d34edb678d",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Update a {value} by ID",
+                "operationId": "2ae400e06e9b282a517cd1ee453428dc",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/values/delete/{id}": {
+            "post": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Create a new Delete",
+                "operationId": "984e9ec980162e47134771dd8846b97d",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/values/restore/{id}": {
+            "post": {
+                "tags": [
+                    "Value"
+                ],
+                "summary": "Create a new Restore",
+                "operationId": "b4dd62e90f2e84e4bfe718eee7cb6ff4",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/example": {
+            "get": {
+                "tags": [
+                    "Example"
+                ],
+                "summary": "Get all Example",
+                "operationId": "cae17e4b1824f74e64508c0fc3791416",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Example"
+                ],
+                "summary": "Create a new Example",
+                "operationId": "c7cfaf52394e65df8695f328d4615dfa",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        },
+        "/api/example/{example}": {
+            "get": {
+                "tags": [
+                    "Example"
+                ],
+                "summary": "Get all {example}",
+                "operationId": "12878856dcbce2c555b1c1f18b2ecd46",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Example"
+                ],
+                "summary": "Update a {example} by ID",
+                "operationId": "3f4195d49547500ca884b9ce1dbf02ad",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Example"
+                ],
+                "summary": "Delete a {example} by ID",
+                "operationId": "61752656610159bdbec4667f7c03c7fd",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "sanctum": {
+                "type": "http",
+                "name": "Authorization",
+                "in": "header",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Register",
+            "description": "Register"
+        },
+        {
+            "name": "Login",
+            "description": "Login"
+        },
+        {
+            "name": "Forgot_password",
+            "description": "Forgot_password"
+        },
+        {
+            "name": "Me",
+            "description": "Me"
+        },
+        {
+            "name": "Clinic",
+            "description": "Clinic"
+        },
+        {
+            "name": "Company",
+            "description": "Company"
+        },
+        {
+            "name": "Get_company",
+            "description": "Get_company"
+        },
+        {
+            "name": "Driver_document",
+            "description": "Driver_document"
+        },
+        {
+            "name": "Master",
+            "description": "Master"
+        },
+        {
+            "name": "Module",
+            "description": "Module"
+        },
+        {
+            "name": "Permission",
+            "description": "Permission"
+        },
+        {
+            "name": "Position",
+            "description": "Position"
+        },
+        {
+            "name": "User",
+            "description": "User"
+        },
+        {
+            "name": "User_timestamp",
+            "description": "User_timestamp"
+        },
+        {
+            "name": "Value",
+            "description": "Value"
+        },
+        {
+            "name": "Example",
+            "description": "Example"
+        }
+    ]
+}
