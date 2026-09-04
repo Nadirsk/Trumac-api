@@ -1,1 +1,3 @@
 I am learning Git and GitHub.
+I am learning CI/CD.
+I am learning Docker.
